@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  /* width: 100vw; */
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(248, 124, 7);
+  color: #fff;
+}
+
+header {
+  height: calc(100vh - 150px);
+  background: no-repeat center/cover url('/assets/bg-header.jpg');
+}
+
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+header nav p {
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  color: #f56c11;
+  transition: .4s;
+}
+
+
+.header-content {
+  color: #fff;
+  font-weight: bold;
+  max-width: 400px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+
+.header-content h1 {
+  margin-bottom: 10px;
+  font-size: 4rem;
+}
+
+
+.pacotes {
+  background: rgb(238, 234, 234);
+  padding: 25px;
+}
+
+.pacotes .pacotes-cards {
+  /* background: #333; */
+  margin: auto;
+  max-width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.pacotes .pacotes-title { 
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+
+.pacotes .card {
+  margin: 25px;
+  width: 250px;
+  height: 350px;
+  background: #fff;
+  border-radius: 24px 0px;
+  box-shadow: 0px 0px 4px -1px #222;
+  position: relative;
+  transition: all 1s;
+}
+
+.pacotes .card:hover {
+  transform: scale(1.1);
+}
+
+
+.pacotes .card-image {
+  width: 250px;
+  height: 200px;
+  border-radius: 24px 0 0 0;
+  object-fit: cover;
+}
+
+.pacotes .card-content {
+  padding: 0 15px;
+}
+
+.pacotes .card-content h1 {
+  font-size: 0.9rem;
+}
+
+.pacotes .card-content ul  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pacotes .card-content ul li {
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  margin: 3px 0px;
+  color: gray;
+  font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.pacotes .card .card-tag-top{
+  position: absolute;
+  background: #f56c11;
+  right: 0;
+  top: 15px;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+  box-shadow: 1px 2px 5px -2px #222;
+}
+
+
+.pacotes .card .card-tag-bottom {
+  position: absolute;
+  left: 0;
+  top: 160px;
+  background: #1d61dd;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 4px 1px #222;
+}
+
+.pacotes .card .card-tag p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffff;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+  padding: 15px;
+}
+
+.servicos .servicos-title {
+  text-align: center;
+  margin: 25px;
+}
+
+.servicos .servicos-cards {
+  display: flex;
+  padding: 35px 0 ;
+  max-width: 950px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.servicos .card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.servicos .card svg {
+  width: 60px;
+  height: 60px;
+  margin: 50px 0;
+  transition: all 1s;
+}
+
+.servicos .card svg:hover {
+  color: #f56c11;
+  transform: scale(1.1);
+}
+
+.servicos .card h3 {
+  font-weight: bold;
+}
+
+.servicos .card p {
+  color: gray;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.servicos .card .card-content {
+  height: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 767px) {
+  header {
+
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-bottom: 55px;
+  }
+
+  .pacotes .card:hover {
+    animation: up 500ms forwards;
+   }
+   
+
+  header nav ul {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    z-index: 99;
+    
+    background: #1d61dd;
+    color: #fff;
+    font-weight: bold;
+    height: 55px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  header nav p {
+    width: 100%;
+    text-align: center;
+  }
+}

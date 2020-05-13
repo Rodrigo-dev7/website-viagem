@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodrigo Viagens</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <p>Rodrigo Viagens</p>
+      <ul>
+        <li>Home</li>
+        <li>Pacotes</li>
+        <li>Serviços</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+
+    <div class="header-content" >
+      <h1>Veneza</h1>
+      <p>Conheça Veneza, e viva aventuras extraodinarias, o embarque está proximo, junte-se a nós nessa experiência</p>
+      <button>Saiba mais</button>
+    </div>
+  </header>
+
+  <section class="pacotes">
+    <h1 class="pacotes-title" >Conheça nossos pacotes</h1>
+
+    <div class="pacotes-cards">
+      <div class="card">
+        <div class="card-tag card-tag-top">
+          <p>Promoção</p>
+        </div>
+        <div class="card-tag card-tag-bottom">
+          <p>R$ 1500,00</p>
+        </div>
+        <img class="card-image" src="https://images.unsplash.com/photo-1492136344046-866c85e0bf04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Paris">
+        <div class="card-content">
+          <h1>Pacote 5 noites hotel premium</h1>
+          <ul>
+            <li><i data-feather="coffee"></i>Café da manhã incluso</li>
+            <li><i data-feather="wifi"></i>Wi-Fi</li>
+            <li><i data-feather="map"></i>Passeio</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tag card-tag-top">
+          <p>Promoção</p>
+        </div>
+        <div class="card-tag card-tag-bottom">
+          <p>R$ 1200,00</p>
+        </div>
+        <img class="card-image" src="https://images.unsplash.com/photo-1506812574058-fc75fa93fead?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Miami">
+        <div class="card-content">
+          <h1>Pacote 10 dias em Miami Beach</h1>
+          <ul>
+            <li><i data-feather="coffee"></i>Café da manhã incluso</li>
+            <li><i data-feather="wifi"></i>Wi-Fi</li>
+            <li><i data-feather="map"></i>Passeio incluso</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tag card-tag-top">
+          <p>Promoção</p>
+        </div>
+        <div class="card-tag card-tag-bottom">
+          <p>R$ 1400,00</p>
+        </div>
+        <img class="card-image" src="https://images.unsplash.com/photo-1509136561942-7d8663edaaa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80" alt="Berlim">
+        <div class="card-content">
+          <h1>Pacote 4 noites em Berlim</h1>
+          <ul>
+            <li><i data-feather="coffee"></i>Café da manhã incluso</li>
+            <li><i data-feather="wifi"></i>Wi-Fi</li>
+            <li><i data-feather="map"></i>Passeio</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="servicos">
+    <h1 class="servicos-title">Serviços</h1>
+    <div class="servicos-cards">
+      <div class="card">
+        <i data-feather="map"></i>
+        <div class="card-content">
+          <h3>Tour guiados</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing sciunt deserunt, alias illo!</p>
+        </div>
+        <button>Saiba mais</button>
+      </div>
+      <div class="card">
+        <i data-feather="camera"></i>
+        <div class="card-content">
+          <h3>Fotográfia Profissional</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing sciunt deserunt, alias illo!</p>
+        </div>
+        <button>Saiba mais</button>
+      </div>
+      <div class="card">
+        <i data-feather="navigation"></i>
+        <div class="card-content">
+          <h3>Aluguel de Veículo</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing sciunt deserunt, alias illo!</p>
+        </div>
+        <button>Saiba mais</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato">
+      <!--The div element for the map -->
+      <div id="map"></div>
+  </section>
+
+
+  <script>
+    // feather icons
+    feather.replace();
+
+    // Initialize and add the map
+    function initMap() {
+    // The location of Uluru
+    var uluru = {lat: -25.344, lng: 131.036};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+  }
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+  </script>
+</body>
+</html>
