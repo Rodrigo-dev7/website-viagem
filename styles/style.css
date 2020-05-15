@@ -22,6 +22,15 @@ button {
   color: #fff;
 }
 
+ul {
+  list-style: none
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   height: calc(100vh - 150px);
   background: no-repeat center/cover url('/assets/bg-header.jpg');
@@ -33,7 +42,7 @@ header nav {
   justify-content: space-between;
   margin: 0 30px;
   color: #fff;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 header nav p {
@@ -239,24 +248,85 @@ header nav ul li:hover {
   width: 100%;  /* The width is the width of the web page */
 }
 
+.contato {
+  /* padding: 60px; */
+  background-color: #e1e8f7;
+  position: relative;
+}
+
+.contato .contato-card {
+  width: 350px;
+  height: 300px;
+  padding: 0 30px;
+  background: #fff;
+  position: absolute;
+  z-index: 99;
+
+  border-radius: 8px;
+
+  top: calc(50% - 150px);
+  left: calc(20% - 170px);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card  h1 {
+  padding-right: 58px;
+}
+
+.contato .contato-card li {
+  font-size: .8rem;
+  font-weight: bold;
+  color: gray;
+  
+  display: flex;
+  align-items: center;
+}
+
+.contato .contato-card li svg {
+  width: 16px;
+  margin: 10px;
+}
+
 /* RESPONSIVIDADE */
 
-@media (max-width: 767px) {
-  header {
+/* Especial para Mapa */
+@media (max-width: 902px) {
+  .contato {
+    padding: 60px;
+  }
 
+  .contato .contato-card {
+    left: 40px;
   }
 }
 
+@media (max-width: 850px) {
+  .contato {
+    padding: 40px 0  ;
+  }
+
+  .contato .contato-card {
+    position: static;
+    margin: 40px auto;
+  }
+}
+
+/* Para Tablet */
+@media (max-width: 767px) {
+
+}
+
+/* Para mobile */
 @media (max-width: 480px) {
   body {
     margin-bottom: 55px;
   }
-
-  .pacotes .card:hover {
-    animation: up 500ms forwards;
-   }
-   
-
+  
   header nav ul {
     position: fixed;
     bottom: 0;
@@ -265,9 +335,9 @@ header nav ul li:hover {
     padding: 0;
     margin: 0;
 
-    z-index: 99;
+    z-index: 100;
     
-    background: #1d61dd;
+    background: #073da1;
     color: #fff;
     font-weight: bold;
     height: 55px;
@@ -277,9 +347,10 @@ header nav ul li:hover {
     align-items: center;
   }
 
-  
   header nav p {
     width: 100%;
     text-align: center;
   }
+
+  
 }
