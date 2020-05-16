@@ -23,7 +23,7 @@ a {
 
 header {
   height: calc(100vh - 150px);
-  background: no-repeat center/cover url('/assets/header.jpg');
+  background: no-repeat center/cover url('/assets/bgheader.jpg');
 }
 
 
@@ -61,6 +61,7 @@ header nav ul li:hover {
   max-width: 400px;
   margin: 150px auto;
   text-align: center;
+  animation: ease text-move 2s forwards;
 }
 
 
@@ -69,6 +70,12 @@ header nav ul li:hover {
   font-size: 4rem;
 }
 
+@keyframes text-move{
+  from {transform:  translateY(0px);
+        opacity: 0;}
+  to {transform:   translateY(-20px);
+      opacity: 1;}
+}
 button {
   padding: 10px 15px;
   border-radius: 8px;
