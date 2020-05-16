@@ -8,7 +8,6 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  /* width: 100vw; */
 }
 
 button {
@@ -33,7 +32,7 @@ a {
 
 header {
   height: calc(100vh - 150px);
-  background: no-repeat center/cover url('/assets/bg-header.jpg');
+  background: no-repeat center/cover url('/assets/header.jpg');
 }
 
 
@@ -42,7 +41,6 @@ header nav {
   justify-content: space-between;
   margin: 0 30px;
   color: #fff;
-  /* opacity: 0.8; */
 }
 
 header nav p {
@@ -80,6 +78,7 @@ header nav ul li:hover {
   font-size: 4rem;
 }
 
+/* PACOTES */
 
 .pacotes {
   background: rgb(238, 234, 234);
