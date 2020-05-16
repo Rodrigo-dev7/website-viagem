@@ -10,16 +10,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-button {
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  border: 0;
-  cursor: pointer;
-  background-color: rgb(248, 124, 7);
-  color: #fff;
-}
+
 
 ul {
   list-style: none
@@ -76,6 +67,17 @@ header nav ul li:hover {
 .header-content h1 {
   margin-bottom: 10px;
   font-size: 4rem;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(248, 124, 7);
+  color: #fff;
 }
 
 /* PACOTES */
