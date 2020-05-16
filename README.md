@@ -13,7 +13,7 @@ Alguns funcionalidade abordadas neste projeto.
     -   Todo o site é responsivo a smartphones, tablets e desktops.
     
 ## Mobile Behavior
-  ![enter image description here](https://github.com/Rodrigo-dev7/website-viagem/blob/master/assets/responsivo.gif?raw=true) 
+  ![enter image description here](https://github.com/Rodrigo-dev7/website-viagem/blob/master/assets/gif-mobile.gif?raw=true) 
 
 
 ## Desktop Behavior
