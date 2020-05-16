@@ -17,4 +17,4 @@ Alguns funcionalidade abordadas neste projeto.
 
 
 ## Desktop Behavior
-![enter image description here](https://github.com/Rodrigo-dev7/website-viagem/blob/master/assets/gif-desktop.gif?raw=true)
+![enter image description here](https://github.com/Rodrigo-dev7/website-viagem/blob/master/assets/gif-desktop2.gif?raw=true)
