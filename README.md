@@ -1,13 +1,20 @@
-# WEBSITE DE VIAGEM
-
-Site criado com HTML e CSS 
-
-- Modelo do site responsivo 
+# Site da Agência de Viagens
 
 
-![responsivo](https://user-images.githubusercontent.com/60434681/82055877-88f1d680-9697-11ea-9bc1-ba3162efaaa7.gif)
+Site criado com  HTML e CSS e pouco de Javascript, o intuito de desenvolver um  website de agència de viagens estático. 
+
+Alguns funcionalidade abordadas neste projeto.
+
+-   Conceitos do Flexbox
+    -   Ultilizamos o básico do flexbox, como: flex-direction, justify-content e align-items
+-   Como integrar com o google maps
+    -   A seção de contato do site usa um mapa para mostrar o endereço. Para isso, usamos a integração e a documentação do Google Maps.
+-   Consultas de mídia
+    -   Todo o site é responsivo a smartphones, tablets e desktops.
+    
+## Mobile Behavior
+  ![enter image description here](https://github.com/Rodrigo-dev7/website-viagem/blob/master/assets/responsivo.gif?raw=true) 
 
 
-- Site em Tela cheia
-
-![site](https://user-images.githubusercontent.com/60434681/82057020-28639900-9699-11ea-996a-6a144692b35c.jpg)
+## Desktop Behavior
+![enter image description here](https://github.com/Rodrigo-dev7/website-viagem/blob/master/assets/gif-desktop.gif?raw=true)
